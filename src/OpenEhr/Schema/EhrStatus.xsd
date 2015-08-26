@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Authored by Ocean Informatics 2009.08.05  -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.openehr.org/v1"
+	targetNamespace="http://schemas.openehr.org/v1" elementFormDefault="qualified" version="v1.0.1"
+	id="EhrStatus.xsd">
+	<xs:include schemaLocation="Structure.xsd"/>
+	<xs:element name="ehr_status" type="EHR_STATUS"/>
+	<xs:complexType name="EHR_STATUS">
+		<xs:complexContent>
+			<xs:extension base="LOCATABLE">
+				<xs:sequence>
+					<xs:element name="subject" type="PARTY_SELF"/>
+					<xs:element name="is_queryable" type="xs:boolean"/>
+					<xs:element name="is_modifiable" type="xs:boolean"/>
+					<xs:element name="other_details" type="ITEM_STRUCTURE" minOccurs="0"/>					
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

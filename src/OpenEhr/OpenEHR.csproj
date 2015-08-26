@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0473EC35-A258-4D20-BDAB-C01A602D4587}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenEhr</RootNamespace>
+    <AssemblyName>OpenEHR</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/OceanEhr.OpenEhrV1/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DBC_CHECK_ALL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\OceanEhr.OpenEhrV1.xml</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DBC_CHECK_PRECONDITION</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\OceanEhr.OpenEhrV1.xml</DocumentationFile>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <DebugSymbols>true</DebugSymbols>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'InternalRelease|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DBC_CHECK_PRECONDITION</DefineConstants>
+    <DocumentationFile>bin\Release\OceanEhr.OpenEhrV1.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DBC_CHECK_ALL</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>DBC_CHECK_PRECONDITION</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'InternalRelease|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\InternalRelease\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AM\Impl\AmType.cs" />
+    <Compile Include="Attributes\AmTypeAttribute.cs" />
+    <Compile Include="Resources\AmValidationStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmValidationStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CommonStrings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RM\Common\Archetyped\Impl\AttributeDictionaryPathable.cs" />
+    <Compile Include="RM\DataTypes\Text\Impl\CodePhraseTypeConverter.cs" />
+    <Compile Include="RM\Support\Identification\ObjectIdTypeConverter.cs" />
+    <Compile Include="RM\Support\Identification\TerminologyIdTypeConverter.cs" />
+    <Compile Include="Serialisation\InvalidXmlException.cs" />
+    <Compile Include="Validation\AmValidator.cs" />
+    <Compile Include="Serialisation\AmXmlSerializer.cs" />
+    <Compile Include="AM\Archetype\Ontology\ArcheytpeTermCodeTools.cs" />
+    <Compile Include="Validation\FetchOperationalObjectEventArgs.cs" />
+    <Compile Include="Validation\ValidationContext.cs" />
+    <Compile Include="Validation\ValidationUtility.cs" />
+    <Compile Include="AM\OpenehrProfile\DataTypes\Basic\CDvState.cs" />
+    <Compile Include="AM\OpenehrProfile\DataTypes\Basic\NonTerminalState.cs" />
+    <Compile Include="AM\OpenehrProfile\DataTypes\Basic\State.cs" />
+    <Compile Include="AM\OpenehrProfile\DataTypes\Basic\StateMachine.cs" />
+    <Compile Include="AM\OpenehrProfile\DataTypes\Basic\TerminalState.cs" />
+    <Compile Include="AM\OpenehrProfile\DataTypes\Basic\Transition.cs" />
+    <Compile Include="AM\OpenehrProfile\DataTypes\Quantity\CDvOrdinal.cs" />
+    <Compile Include="AM\OpenehrProfile\DataTypes\Quantity\CDvQuantity.cs" />
+    <Compile Include="AM\OpenehrProfile\DataTypes\Quantity\CQuantityItem.cs" />
+    <Compile Include="AM\OpenehrProfile\DataTypes\Text\CCodePhrase.cs" />
+    <Compile Include="AM\Archetype\Archetype.cs" />
+    <Compile Include="AM\Archetype\Assertion\Assertion.cs" />
+    <Compile Include="AM\Archetype\Assertion\AssertionVariable.cs" />
+    <Compile Include="AM\Archetype\Assertion\ExprBinaryOperator.cs" />
+    <Compile Include="AM\Archetype\Assertion\ExprItem.cs" />
+    <Compile Include="AM\Archetype\Assertion\ExprLeaf.cs" />
+    <Compile Include="AM\Archetype\Assertion\ExprOperator.cs" />
+    <Compile Include="AM\Archetype\Assertion\ExprUnaryOperator.cs" />
+    <Compile Include="AM\Archetype\Assertion\OperatorKind.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\ArchetypeConstraint.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\ArchetypeInternalRef.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\ArchetypeSlot.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\Cardinality.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\CAttribute.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\CComplexObject.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\CDefinedObject.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\CDomainType.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\CMultipleAttribute.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\CObject.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\ConstraintRef.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\CPrimitiveObject.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\CReferenceObject.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\CSingleAttribute.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\Primitive\CBoolean.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\Primitive\CDate.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\Primitive\CDateTime.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\Primitive\CDuration.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\Primitive\CInteger.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\Primitive\CPrimitive.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\Primitive\CReal.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\Primitive\CString.cs" />
+    <Compile Include="AM\Archetype\ConstraintModel\Primitive\CTime.cs" />
+    <Compile Include="AM\Archetype\DifferentialArchetype.cs" />
+    <Compile Include="AM\Archetype\Ontology\ArchetypeOntology.cs" />
+    <Compile Include="AM\Archetype\Ontology\ArchetypeTerm.cs" />
+    <Compile Include="AM\Archetype\ValidityKind.cs" />
+    <Compile Include="Factories\AmFactory.cs" />
+    <Compile Include="Validation\ValidatingAgent.cs" />
+    <Compile Include="Validation\ValidationEventArgs.cs" />
+    <Compile Include="RM\Common\Archetyped\Impl\Archetyped.cs" />
+    <Compile Include="RM\Common\Archetyped\Impl\FeederAudit.cs" />
+    <Compile Include="RM\Common\Archetyped\FeederAuditDetails.cs" />
+    <Compile Include="RM\Common\Archetyped\Impl\Link.cs" />
+    <Compile Include="RM\Common\Archetyped\Pathable.cs" />
+    <Compile Include="RM\Common\Archetyped\Impl\ReflectivePathable.cs" />
+    <Compile Include="RM\Common\ChangeControl\Contribution.cs" />
+    <Compile Include="RM\Common\ChangeControl\OriginalVersion.cs" />
+    <Compile Include="RM\Common\ChangeControl\VersionBase.cs" />
+    <Compile Include="RM\Common\ChangeControl\VersionedObject.cs" />
+    <Compile Include="RM\Common\Directory\VersionedFolder.cs" />
+    <Compile Include="RM\Common\Generic\Attestation.cs" />
+    <Compile Include="RM\Common\Generic\AuditDetails.cs" />
+    <Compile Include="RM\Common\Generic\Participation.cs" />
+    <Compile Include="RM\Common\Generic\PartyIdentified.cs" />
+    <Compile Include="RM\Common\Generic\PartyProxy.cs" />
+    <Compile Include="RM\Common\Generic\PartyRelated.cs" />
+    <Compile Include="RM\Common\Generic\RevisionHistory.cs" />
+    <Compile Include="RM\Common\Generic\RevisionHistoryItem.cs" />
+    <Compile Include="RM\Common\Resource\Annotation.cs" />
+    <Compile Include="RM\Common\Resource\AuthoredResource.cs" />
+    <Compile Include="RM\Common\Resource\ResourceDescription.cs" />
+    <Compile Include="RM\Common\Resource\ResourceDescriptionItem.cs" />
+    <Compile Include="RM\Common\Resource\TranslationDetails.cs" />
+    <Compile Include="RM\Composition\Impl\CompositionAdapter.cs" />
+    <Compile Include="RM\Composition\Impl\CompositionAdapterContext.cs" />
+    <Compile Include="RM\Composition\Composition.cs" />
+    <Compile Include="RM\Composition\Content\ContentItem.cs" />
+    <Compile Include="RM\Composition\Content\Entry\Action.cs" />
+    <Compile Include="RM\Composition\Content\Entry\Activity.cs" />
+    <Compile Include="RM\Composition\Content\Entry\AdminEntry.cs" />
+    <Compile Include="RM\Composition\Content\Entry\CareEntry.cs" />
+    <Compile Include="RM\Composition\Content\Entry\InstructionDetails.cs" />
+    <Compile Include="RM\Composition\Content\Entry\Evaluation.cs" />
+    <Compile Include="RM\Composition\Content\Entry\Instruction.cs" />
+    <Compile Include="RM\Composition\Content\Entry\IsmTransition.cs" />
+    <Compile Include="RM\Composition\Content\Entry\Observation.cs" />
+    <Compile Include="RM\Composition\Content\Navigation\Section.cs" />
+    <Compile Include="RM\Composition\EventContext.cs" />
+    <Compile Include="RM\Composition\IComposition.cs" />
+    <Compile Include="RM\DataStructures\DataStructure.cs" />
+    <Compile Include="RM\DataStructures\History\IntervalEvent.cs" />
+    <Compile Include="RM\DataStructures\History\Event.cs" />
+    <Compile Include="RM\DataStructures\History\History.cs" />
+    <Compile Include="RM\DataStructures\History\PointEvent.cs" />
+    <Compile Include="RM\DataStructures\ItemStructure\ItemTable.cs" />
+    <Compile Include="RM\DataStructures\ItemStructure\ItemSingle.cs" />
+    <Compile Include="RM\DataStructures\ItemStructure\ItemList.cs" />
+    <Compile Include="RM\DataStructures\ItemStructure\ItemStructure.cs" />
+    <Compile Include="RM\DataStructures\ItemStructure\ItemTree.cs" />
+    <Compile Include="RM\DataStructures\ItemStructure\Representation\Cluster.cs" />
+    <Compile Include="RM\DataStructures\ItemStructure\Representation\Element.cs" />
+    <Compile Include="RM\DataStructures\ItemStructure\Representation\Item.cs" />
+    <Compile Include="RM\DataTypes\Basic\DataValue.cs" />
+    <Compile Include="RM\Composition\Content\Entry\Entry.cs" />
+    <Compile Include="RM\Common\Directory\Folder.cs" />
+    <Compile Include="RM\DataTypes\Basic\DvBoolean.cs" />
+    <Compile Include="RM\DataTypes\Basic\DvIdentifier.cs" />
+    <Compile Include="RM\DataTypes\Basic\DvState.cs" />
+    <Compile Include="RM\DataTypes\Encapsulated\DvEncapsulated.cs" />
+    <Compile Include="RM\DataTypes\Encapsulated\DvMultimedia.cs" />
+    <Compile Include="RM\DataTypes\Encapsulated\DvParsable.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DvAbsoluteQuantity.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DvCount.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DvProportion.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DvQuantity.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DvQuantified.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DvInterval.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DvOrdered.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DateTime\DvDate.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DateTime\DvDuration.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DateTime\DvTime.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DateTime\DvDateTime.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DvOrdinal.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DvAmount.cs" />
+    <Compile Include="RM\DataTypes\Quantity\DateTime\DvTemporal.cs" />
+    <Compile Include="RM\DataTypes\Quantity\ReferenceRange.cs" />
+    <Compile Include="RM\DataTypes\Text\CodePhrase.cs" />
+    <Compile Include="RM\DataTypes\Text\DvCodedText.cs" />
+    <Compile Include="RM\Common\Generic\PartySelf.cs" />
+    <Compile Include="RM\DataTypes\Text\DvText.cs" />
+    <Compile Include="RM\DataTypes\Text\TermMapping.cs" />
+    <Compile Include="RM\DataTypes\Uri\DvEhrUri.cs" />
+    <Compile Include="RM\DataTypes\Uri\DvUri.cs" />
+    <Compile Include="RM\DataTypes\Text\Impl\TextValueTypeConverter.cs" />
+    <Compile Include="RM\Demographic\Impl\Address.cs" />
+    <Compile Include="RM\Demographic\Impl\Agent.cs" />
+    <Compile Include="RM\Demographic\Impl\Capability.cs" />
+    <Compile Include="RM\Demographic\Impl\Contact.cs" />
+    <Compile Include="RM\Demographic\Impl\Group.cs" />
+    <Compile Include="RM\Demographic\Impl\Organisation.cs" />
+    <Compile Include="RM\Demographic\Impl\PartyIdentity.cs" />
+    <Compile Include="RM\Demographic\Impl\PartyRelationship.cs" />
+    <Compile Include="RM\Demographic\Impl\Person.cs" />
+    <Compile Include="RM\Demographic\Impl\Role.cs" />
+    <Compile Include="RM\Demographic\Impl\VersionedParty.cs" />
+    <Compile Include="Factories\DemograpicFactory.cs" />
+    <Compile Include="DesignByContract\DesignByContract.cs" />
+    <Compile Include="RM\Ehr\EHR.cs" />
+    <Compile Include="RM\Ehr\EhrStatus.cs" />
+    <Compile Include="RM\Ehr\VersionedEhrStatus.cs" />
+    <Compile Include="RM\Ehr\VersionedComposition.cs" />
+    <Compile Include="Paths\PathException.cs" />
+    <Compile Include="Validation\ValidationException.cs" />
+    <Compile Include="RM\Extract\Common\ExtractEntityContent.cs" />
+    <Compile Include="RM\Extract\Common\ExtractEntityIdentifier.cs" />
+    <Compile Include="RM\Extract\Common\ExtractChapter.cs" />
+    <Compile Include="RM\Extract\Common\Extract.cs" />
+    <Compile Include="RM\Common\Archetyped\Impl\ExtractLocatable.cs" />
+    <Compile Include="RM\Extract\Common\Impl\ExtractXmlSerializer.cs" />
+    <Compile Include="RM\Extract\Common\Impl\XmlSerializableExtract.cs" />
+    <Compile Include="Futures\OperationalTemplate\CArchetypeRoot.cs" />
+    <Compile Include="Futures\OperationalTemplate\TConstraint.cs" />
+    <Compile Include="Futures\OperationalTemplate\TAttribute.cs" />
+    <Compile Include="Futures\OperationalTemplate\TView.cs" />
+    <Compile Include="Futures\OperationalTemplate\TComplexObject.cs" />
+    <Compile Include="Futures\OperationalTemplate\OperationalTemplate.cs" />
+    <Compile Include="Futures\OperationalTemplate\OperationalTemplateXmlWriter.cs" />
+    <Compile Include="Futures\OperationalTemplate\OperationalTemplateXmlReader.cs" />
+    <Compile Include="Futures\OperationalTemplate\TViewConstraint.cs" />
+    <Compile Include="Paths\ArchetypedPathProcessor.cs" />
+    <Compile Include="Paths\AssertionContext.cs" />
+    <Compile Include="Paths\FunctionCall.cs" />
+    <Compile Include="Paths\IPathProcessor.cs" />
+    <Compile Include="Paths\PathExpr.cs" />
+    <Compile Include="Paths\PredicateExpr.cs" />
+    <Compile Include="Attributes\RmAttributeAttribute.cs" />
+    <Compile Include="Attributes\RmCodesetAttribute.cs" />
+    <Compile Include="Attributes\RmTerminologyAttribute.cs" />
+    <Compile Include="Attributes\RmTypeAttribute.cs" />
+    <Compile Include="RM\Impl\RmType.cs" />
+    <Compile Include="RM\Common\Archetyped\Archetyped.cs" />
+    <Compile Include="RM\Common\Archetyped\FeederAudit.cs" />
+    <Compile Include="RM\Common\Archetyped\Link.cs" />
+    <Compile Include="RM\Common\Archetyped\Impl\Locatable.cs" />
+    <Compile Include="RM\Demographic\Actor.cs" />
+    <Compile Include="RM\Demographic\Address.cs" />
+    <Compile Include="RM\Demographic\Agent.cs" />
+    <Compile Include="RM\Demographic\Capability.cs" />
+    <Compile Include="RM\Demographic\Contact.cs" />
+    <Compile Include="RM\Demographic\Group.cs" />
+    <Compile Include="RM\Demographic\Organisation.cs" />
+    <Compile Include="RM\Demographic\Party.cs" />
+    <Compile Include="RM\Demographic\PartyIdentity.cs" />
+    <Compile Include="RM\Demographic\PartyRelationship.cs" />
+    <Compile Include="RM\Demographic\Person.cs" />
+    <Compile Include="RM\Demographic\Role.cs" />
+    <Compile Include="RM\Demographic\VersionedParty.cs" />
+    <Compile Include="RM\Impl\IVisitable.cs" />
+    <Compile Include="RM\Impl\IVisitor.cs" />
+    <Compile Include="AssumedTypes\Impl\LocatableBindingListView.cs" />
+    <Compile Include="AssumedTypes\Impl\LocatableSet.cs" />
+    <Compile Include="AssumedTypes\Impl\PathableList.cs" />
+    <Compile Include="AssumedTypes\Set.cs" />
+    <Compile Include="AssumedTypes\Hash.cs" />
+    <Compile Include="RM\Support\Terminology\ICodeSetAccess.cs" />
+    <Compile Include="RM\Support\Terminology\ITerminologyAccess.cs" />
+    <Compile Include="RM\Support\Terminology\ITerminologyService.cs" />
+    <Compile Include="RM\Support\Terminology\OpenEhrTerminologyIdentifiers.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\CodeSetAccess.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\Configuration\CodeSetAccessProviderData.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\Configuration\TerminologyAccessProviderData.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\ICodeSetAccessProvider.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\IPropertyUnitsService.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\ITerminologyAccessProvider.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\ITerminologyServiceProvider.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\PropertyUnitsService.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\TerminologyAccess.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\Data\ref_impl_java\CodesetData.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\Data\TerminologyDocument.cs" />
+    <Compile Include="RM\Support\Terminology\Impl\TerminologyService.cs" />
+    <Compile Include="Utilities\PathHelper\BasePath.cs" />
+    <Compile Include="Utilities\PathHelper\DirectoryPath.cs" />
+    <Compile Include="Utilities\PathHelper\DirectoryPathAbsolute.cs" />
+    <Compile Include="Utilities\PathHelper\DirectoryPathRelative.cs" />
+    <Compile Include="Utilities\PathHelper\FilePath.cs" />
+    <Compile Include="Utilities\PathHelper\FilePathAbsolute.cs" />
+    <Compile Include="Utilities\PathHelper\FilePathRelative.cs" />
+    <Compile Include="Utilities\PathHelper\InternalStringHelper.cs" />
+    <Compile Include="Utilities\PathHelper\PathHelper.cs" />
+    <Compile Include="Constants\VersionTime.cs" />
+    <Compile Include="RM\Extract\Common\Impl\XmlSerializableXVersionedObject.cs" />
+    <Compile Include="RM\Extract\Common\XVersionedObject.cs" />
+    <Compile Include="RM\Extract\EhrExtract\EhrExtractContent.cs" />
+    <Compile Include="RM\Impl\IRmType.cs" />
+    <Compile Include="Factories\RmFactory.cs" />
+    <Compile Include="Paths\Path.cs" />
+    <Compile Include="Validation\RmValidator.cs" />
+    <Compile Include="AssumedTypes\Aggregate.cs" />
+    <Compile Include="AssumedTypes\Impl\BindingListView.cs" />
+    <Compile Include="AssumedTypes\Interval.cs" />
+    <Compile Include="AssumedTypes\Iso8601Date.cs" />
+    <Compile Include="AssumedTypes\Iso8601DateTime.cs" />
+    <Compile Include="AssumedTypes\Iso8601Duration.cs" />
+    <Compile Include="AssumedTypes\Iso8601Time.cs" />
+    <Compile Include="AssumedTypes\Iso8601TimeZone.cs" />
+    <Compile Include="AssumedTypes\List.cs" />
+    <Compile Include="AssumedTypes\Impl\LocatableList.cs" />
+    <Compile Include="AssumedTypes\Impl\NamedLocatableList.cs" />
+    <Compile Include="AssumedTypes\TimeDefinitions.cs" />
+    <Compile Include="RM\Support\Identification\ArchetypeId.cs" />
+    <Compile Include="RM\Support\Identification\AccessGroupRef.cs" />
+    <Compile Include="RM\Support\Identification\IsoOid.cs" />
+    <Compile Include="RM\Support\Identification\Uuid.cs" />
+    <Compile Include="RM\Support\Identification\InternetId.cs" />
+    <Compile Include="RM\Support\Identification\GenericId.cs" />
+    <Compile Include="RM\Support\Identification\LocatableRef.cs" />
+    <Compile Include="RM\Support\Identification\TemplateId.cs" />
+    <Compile Include="RM\Support\Identification\HierObjectId.cs" />
+    <Compile Include="RM\Common\Directory\IFolder.cs" />
+    <Compile Include="RM\Common\Archetyped\ILocatable.cs" />
+    <Compile Include="RM\Common\ChangeControl\IVersion.cs" />
+    <Compile Include="RM\Common\ChangeControl\IVersionedObject.cs" />
+    <Compile Include="RM\Common\Archetyped\Impl\DemographicLocatable.cs" />
+    <Compile Include="RM\Support\Identification\ObjectId.cs" />
+    <Compile Include="RM\Support\Identification\ObjectRef.cs" />
+    <Compile Include="RM\Support\Identification\ObjectVersionId.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RM\Support\Identification\PartyRef.cs" />
+    <Compile Include="RM\Support\Identification\TerminologyId.cs" />
+    <Compile Include="RM\Support\Identification\UID.cs" />
+    <Compile Include="RM\Support\Identification\UidBasedId.cs" />
+    <Compile Include="RM\Support\Identification\VersionTreeId.cs" />
+    <Compile Include="Constants\Terminology.cs" />
+    <Compile Include="Serialisation\RmXmlSerializer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Extract\XmlSerializableExtract.cd" />
+    <None Include="Extract\Extract.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AmValidationStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AmValidationStrings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\CommonStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommonStrings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Support\Terminology\Realisation\TerminologyData\openehr_terminology_en.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmValidationStrings.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CommonStrings.txt" />
+    <EmbeddedResource Include="Schema\Archetype.xsd" />
+    <EmbeddedResource Include="Schema\BaseTypes.xsd" />
+    <EmbeddedResource Include="Schema\Composition.xsd" />
+    <EmbeddedResource Include="Schema\Content.xsd" />
+    <EmbeddedResource Include="Schema\EhrStatus.xsd" />
+    <EmbeddedResource Include="Schema\Extract.xsd" />
+    <EmbeddedResource Include="Schema\OpenehrProfile.xsd" />
+    <EmbeddedResource Include="Schema\Resource.xsd" />
+    <EmbeddedResource Include="Schema\Structure.xsd" />
+    <EmbeddedResource Include="Schema\Template.xsd" />
+    <EmbeddedResource Include="Schema\Version.xsd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AssertionExpressMustBeBool" xml:space="preserve">
+    <value>Assertion expression type must be 'BOOLEAN' where expression is not null.</value>
+  </data>
+  <data name="CDurationPatternAndRangeNull" xml:space="preserve">
+    <value>If CDuration.Range is null, pattern must not be null.</value>
+  </data>
+  <data name="CIntegerListAndRangeNotNull" xml:space="preserve">
+    <value>If CIngeger.List or CInteger.Range is not null, the other must be null.</value>
+  </data>
+  <data name="CIntegerListXorRange" xml:space="preserve">
+    <value>Either CInteger.List of CInteger.Range must be not null.</value>
+  </data>
+  <data name="CRealListAndRangeNotNull" xml:space="preserve">
+    <value>If CReal.List or CReal.Range is not null, the other must be null.</value>
+  </data>
+  <data name="CRealListXorRange" xml:space="preserve">
+    <value>Either CReal.List of CReal.Range must be not null.</value>
+  </data>
+  <data name="CStringListAndPatternNotNull" xml:space="preserve">
+    <value>If CString.List or CString.Pattern is not null, the other must be null.</value>
+  </data>
+  <data name="CStringListXorPattern" xml:space="preserve">
+    <value>Either CString.List or CString.Pattern must be not null.</value>
+  </data>
+  <data name="DatePatternInvalid" xml:space="preserve">
+    <value>Date pattern is invalid: {0}.</value>
+  </data>
+  <data name="DefaultsSerialisationNotImplemented" xml:space="preserve">
+    <value>Serialisation of default values not implemented.</value>
+  </data>
+  <data name="DurationPatternInvalid" xml:space="preserve">
+    <value>Duration pattern is invalid: {0}.</value>
+  </data>
+  <data name="EitherTrueOrFalseMustBeValid" xml:space="preserve">
+    <value>Either trueValid or falseValid must be set to true.</value>
+  </data>
+  <data name="ExpectedLocalNameIsXNotY" xml:space="preserve">
+    <value>Expected local name is '{0}', not '{1}'.</value>
+  </data>
+  <data name="IfXIsNotNullMustBeEmpty" xml:space="preserve">
+    <value>If {0} is not null it must not be empty.</value>
+  </data>
+  <data name="InvalidDayValidityX" xml:space="preserve">
+    <value>'{0}' is an invalid DayValidity.</value>
+  </data>
+  <data name="InvalidHourValidityX" xml:space="preserve">
+    <value>'{0}' is an invalid HourValidity.</value>
+  </data>
+  <data name="InvalidMinuteValidityX" xml:space="preserve">
+    <value>'{0}' is an invalid MinuteValidity.</value>
+  </data>
+  <data name="InvalidMonthValidityX" xml:space="preserve">
+    <value>'{0}' is an invalid MonthValidity.</value>
+  </data>
+  <data name="InvalidSecondValidityX" xml:space="preserve">
+    <value>'{0}' is an invalid SecondValidity.</value>
+  </data>
+  <data name="LoopingMethodTerminated" xml:space="preserve">
+    <value>The method '{0}' with parameter type '{1}' is looping and is terminated.</value>
+  </data>
+  <data name="MethodXNotImplementedForParamTypeY" xml:space="preserve">
+    <value>The method '{0}' with parameter type '{1}' is not implemented.</value>
+  </data>
+  <data name="OntologyMissingCode" xml:space="preserve">
+    <value>Archetype ontology does not contain specified term/constraint code ({0}).</value>
+  </data>
+  <data name="OntologyMissingLanguageX" xml:space="preserve">
+    <value>Archetype ontology does not contain specified language ({0}).</value>
+  </data>
+  <data name="OntologyMissingTerminologyX" xml:space="preserve">
+    <value>Archetype ontology does not contain specified terminology ({0}).</value>
+  </data>
+  <data name="OpenEhrTypeMissingAmTypeAttribute" xml:space="preserve">
+    <value>openEHR type {0} does not have an AmTypeAttribute.</value>
+  </data>
+  <data name="PatternMustBeNullBeforeSet" xml:space="preserve">
+    <value>Date pattern must be null before being set.</value>
+  </data>
+  <data name="RegexGroupsMustNotBeNull" xml:space="preserve">
+    <value>Regular expression match groups must not be null.</value>
+  </data>
+  <data name="SpecialisationDepthLessThanZero" xml:space="preserve">
+    <value>Specialisation depth value must be &gt;=0.</value>
+  </data>
+  <data name="TimePatternInvalid" xml:space="preserve">
+    <value>Time pattern is invalid: {0}.</value>
+  </data>
+  <data name="XIsNull" xml:space="preserve">
+    <value>{0} is null.</value>
+  </data>
+  <data name="XIsNullOrEmpty" xml:space="preserve">
+    <value>{0} is null or empty.</value>
+  </data>
+  <data name="XMustNotBeNull" xml:space="preserve">
+    <value>{0} must not be null.</value>
+  </data>
+  <data name="XMustNotBeNullOrEmpty" xml:space="preserve">
+    <value>{0} must not be null or empty.</value>
+  </data>
+  <data name="CBooleanInvariant" xml:space="preserve">
+    <value>At least one of CBoolean.TrueValid and CBoolean.FalseValid must be true.</value>
+  </data>
+  <data name="CBooleanDefaultInvalid" xml:space="preserve">
+    <value>CBoolean.DefaultValue invalid against the CBoolean restrictions.</value>
+  </data>
+</root>

@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArchetypeSlotValidationNotImplemented" xml:space="preserve">
+    <value>Validation of ArchetypeSlot instances is not yet implemented.</value>
+  </data>
+  <data name="ArchetypeXLoadFailed" xml:space="preserve">
+    <value>Could not load operational archetype '{0}' for validation.</value>
+  </data>
+  <data name="CardinalityMustBeBounded" xml:space="preserve">
+    <value>Cardinality interval lower must be bounded.</value>
+  </data>
+  <data name="CardinalityOutOfBounds" xml:space="preserve">
+    <value>The number of items ({0}) for attribute '{1}' is outside the cardinality constraint interval.</value>
+  </data>
+  <data name="CannotResolveRmTypeName" xml:space="preserve">
+    <value>Could not find reference model type corresponding to '{0}'.</value>
+  </data>
+  <data name="CDefinedObjectNameChildExpected" xml:space="preserve">
+    <value>Expected first child of name attribute to be a CDefinedObject.</value>
+  </data>
+  <data name="ConstraintPathBadEnding" xml:space="preserve">
+    <value>Constraint path must not end with forward slash (/): {0}.</value>
+  </data>
+  <data name="ConstraintPathMalformed" xml:space="preserve">
+    <value>Constraint path is malformed: {0}.</value>
+  </data>
+  <data name="DefaultArchetypeMustBeTypeLocatable" xml:space="preserve">
+    <value>Default archetype root must be of type Locatable.</value>
+  </data>
+  <data name="ExpectingNodeIdXButGotY" xml:space="preserve">
+    <value>Expecting archetypeNodeId '{0}' but got '{1}'.</value>
+  </data>
+  <data name="ExpectingOnlyOneUnnamedChild" xml:space="preserve">
+    <value>More than one unnamed child present. Only one unnamed child is expected.</value>
+  </data>
+  <data name="ExpectingValueXToBeTypeY" xml:space="preserve">
+    <value>Expecting value '{0}' to be of type {1}.</value>
+  </data>
+  <data name="ExpressionTypeNotBoolean" xml:space="preserve">
+    <value>Expression.Type must be 'BOOLEAN'.</value>
+  </data>
+  <data name="IncorrectRmType" xml:space="preserve">
+    <value>Expecting RmType '{0}' but got '{1}'.</value>
+  </data>
+  <data name="IncorrectNodeId" xml:space="preserve">
+    <value>Expecting Node ID '{0}' but got '{1}'.</value>
+  </data>
+  <data name="InternalRefTargetPathFinalPartNameIncorrect" xml:space="preserve">
+    <value>ArchetypeInternalRef target path's final path part must start with the reference model attribute name '{0}' as defined by its parent.</value>
+  </data>
+  <data name="IsSubsetNotImplementedInX" xml:space="preserve">
+    <value>'IsSubsetOf' method of {0} is not yet implemented.</value>
+  </data>
+  <data name="ItemXNotAllowedByAttributeY" xml:space="preserve">
+    <value>Data item of type '{0}' is not allowed by attribute '{2}' child(ren) constraint(s).</value>
+  </data>
+  <data name="ItemXWithIdYNotAllowedByAttributeZ" xml:space="preserve">
+    <value>Data item of type '{0}' with node ID '{1}' is not allowed by attribute '{2}' child(ren) constraint(s).</value>
+  </data>
+  <data name="MissingChildrenWithNodeIdX" xml:space="preserve">
+    <value>Unable to find any cObject(s) with nodeId '{0}'.</value>
+  </data>
+  <data name="MultiAttributeChildNotComplexObj" xml:space="preserve">
+    <value>Expected child of multiple attribute to be assignable to CComplexObject.</value>
+  </data>
+  <data name="NameConstraintExpected" xml:space="preserve">
+    <value>Expected constraint object for name attribute.</value>
+  </data>
+  <data name="NoConstraintForPathX" xml:space="preserve">
+    <value>Unable to find a constraint to match path: {0}.</value>
+  </data>
+  <data name="NoNodeMatchAtPath" xml:space="preserve">
+    <value>Cannot find a legitimate matching node at the target path '{0}'.</value>
+  </data>
+  <data name="NotAllowedByAttributeXConstraint" xml:space="preserve">
+    <value>No match found in attribute '{0}' child(ren) constraints for data item being validated. The current data item is thus not allowed.</value>
+  </data>
+  <data name="NotEnoughOccurrences" xml:space="preserve">
+    <value>There are not enough occurrences of node with archetype code '{0}'. Expecting at least {1} but got {2}.</value>
+  </data>
+  <data name="OntologyMustContainLanguageY" xml:space="preserve">
+    <value>Archetype '{0}' ontology must contain language '{1}'.</value>
+  </data>
+  <data name="OperatorXInvalidForTypeY" xml:space="preserve">
+    <value>{0} operator cannot be used for a {1} value.</value>
+  </data>
+  <data name="PathYNotUniqueAtX" xml:space="preserve">
+    <value>The following path is not unique for the path part where node ID is '{0}': {1}.</value>
+  </data>
+  <data name="RmExpectedConstraintMissing" xml:space="preserve">
+    <value>Attribute '{0}' expected according to the reference model but is missing.</value>
+  </data>
+  <data name="RootConstraintInvalid" xml:space="preserve">
+    <value>Root ArchetypeConstraint must be assignable to CComplexObject.</value>
+  </data>
+  <data name="SlotMustNotBeFull" xml:space="preserve">
+    <value>Slot must not be full.</value>
+  </data>
+  <data name="TextValueXInvalidForCodeY" xml:space="preserve">
+    <value>DvCodedText value '{0}' does not match the term definition for the code_string '{1}'.</value>
+  </data>
+  <data name="TmExpectedConstraintMissing" xml:space="preserve">
+    <value>Attribute '{0}' expected according to archetype/template constraint but is missing.</value>
+  </data>
+  <data name="TmForbiddenConstraint" xml:space="preserve">
+    <value>Attribute '{0}' is forbidden but exists.</value>
+  </data>
+  <data name="TooManyOccurrences" xml:space="preserve">
+    <value>There are too many occurrences of node with archetype code '{0}'. Expecting at most {1} but got {2}.</value>
+  </data>
+  <data name="TypeXNotSupportedByYOperator" xml:space="preserve">
+    <value>Type '{0}' is not supported for {1} operator.</value>
+  </data>
+  <data name="UnexpectedAttributeX" xml:space="preserve">
+    <value>Unexpected attribute '{0}' is present.</value>
+  </data>
+  <data name="UnsupportedExpressionOperator" xml:space="preserve">
+    <value>Expression operator '{0}' is not supported.</value>
+  </data>
+  <data name="UnsupportedExprLeafReferenceType" xml:space="preserve">
+    <value>ExprLeaf.ReferenceType '{0}' is not supported.</value>
+  </data>
+  <data name="ValueMustImplementIRmType" xml:space="preserve">
+    <value>Value being validated must implement IRmType, but is of type {0} which does not.</value>
+  </data>
+  <data name="XIsNotTypeYValue" xml:space="preserve">
+    <value>'{0}' is not a {1} value.</value>
+  </data>
+  <data name="XMustBeValidY" xml:space="preserve">
+    <value>{0} must be a valid {1}.</value>
+  </data>
+  <data name="XMustImplementY" xml:space="preserve">
+    <value>Value of type {0} is expected to implement {1} but does not.</value>
+  </data>
+  <data name="YNotAllowedByAttributeXConstraint" xml:space="preserve">
+    <value>No match found in attribute '{0}' child(ren) constraints for data item being validated ({1}). The current data item is thus not allowed.</value>
+  </data>
+  <data name="DateXDoesNotMatchPatternY" xml:space="preserve">
+    <value>Date value '{0}' does not match pattern '{1}'.</value>
+  </data>
+  <data name="DateTimeXDoesNotMatchPatternY" xml:space="preserve">
+    <value>Datetime value '{0}' does not match pattern '{1}'.</value>
+  </data>
+  <data name="DurationXDoesNotMatchPatternY" xml:space="preserve">
+    <value>Duration value '{0}' does not match pattern '{1}'.</value>
+  </data>
+  <data name="TimeXDoesNotMatchPatternY" xml:space="preserve">
+    <value>Time value '{0}' does not match pattern '{1}'.</value>
+  </data>
+  <data name="InvalidIsoDateX" xml:space="preserve">
+    <value>'{0}' is an invalid ISO8601 date.</value>
+  </data>
+  <data name="InvalidIsoDateTimeX" xml:space="preserve">
+    <value>'{0}' is an invalid ISO8601 datetime.</value>
+  </data>
+  <data name="InvalidIsoDurationX" xml:space="preserve">
+    <value>'{0}' is an invalid ISO8601 duration.</value>
+  </data>
+  <data name="InvalidIsoTime" xml:space="preserve">
+    <value>'{0}' is an invalid ISO8601 time.</value>
+  </data>
+  <data name="InvalidIntegerX" xml:space="preserve">
+    <value>Invalid integer value ({0}).</value>
+  </data>
+  <data name="InvalidRealX" xml:space="preserve">
+    <value>Invalid real value ({0}).</value>
+  </data>
+  <data name="InvalidStringX" xml:space="preserve">
+    <value>Invalid string value '{0}'.</value>
+  </data>
+  <data name="InvalidDvStateX" xml:space="preserve">
+    <value>'{0}' is an invalid DvState.</value>
+  </data>
+  <data name="InvalidDvOrdinalX" xml:space="preserve">
+    <value>'{0}' is an invalid DvOrdinal.</value>
+  </data>
+  <data name="InvalidDvQuantityX" xml:space="preserve">
+    <value>'{0}' is an invalid DvQuantity.</value>
+  </data>
+  <data name="DateXOutOfRange" xml:space="preserve">
+    <value>Date value '{0}' is out of range.</value>
+  </data>
+  <data name="DateTimeXOutOfRange" xml:space="preserve">
+    <value>Datetime value '{0}' is out of range.</value>
+  </data>
+  <data name="DurationXOutOfRange" xml:space="preserve">
+    <value>Duration value '{0}' is out of range.</value>
+  </data>
+  <data name="IntegerXOutOfRange" xml:space="preserve">
+    <value>Integer value ({0}) is out of range.</value>
+  </data>
+  <data name="RealXOutOfRange" xml:space="preserve">
+    <value>Real value ({0}) is out of range.</value>
+  </data>
+  <data name="TimeXOutOfRange" xml:space="preserve">
+    <value>Time value '{0}' is out of range.</value>
+  </data>
+  <data name="XNotInCDvOrdinalList" xml:space="preserve">
+    <value>Ordinal value ({0}) is not in CDvOrdinal.List.</value>
+  </data>
+  <data name="XNotInCIntegerList" xml:space="preserve">
+    <value>Integer value ({0}) is not in CInteger.List.</value>
+  </data>
+  <data name="XNotInCRealList" xml:space="preserve">
+    <value>Real value ({0}) is not in CReal.List.</value>
+  </data>
+  <data name="XNotInCStringList" xml:space="preserve">
+    <value>String  value ({0}) is not in CString.List.</value>
+  </data>
+  <data name="CRealAssumedValueSetFalse" xml:space="preserve">
+    <value>CReal.AssumedValueSet must be true.</value>
+  </data>
+  <data name="ConstraintXIsValidGetsFalse" xml:space="preserve">
+    <value>{0}.IsValid() must be true.</value>
+  </data>
+  <data name="StringXDoesNotMatchPatternY" xml:space="preserve">
+    <value>String value '{0}' does not match pattern '{1}'.</value>
+  </data>
+  <data name="StandardEquivNotImplementedInX" xml:space="preserve">
+    <value>'StandardEquivalent' method of {0} is not yet implemented.</value>
+  </data>
+  <data name="DefaultValueNotImplementedInX" xml:space="preserve">
+    <value>'DefaultValue' property of {0} is not yet implemented.</value>
+  </data>
+  <data name="DvOrdinalSymbolXIncorrectForCodeY" xml:space="preserve">
+    <value>DvOrdinal symbol value '{0}' does not match  the term definition for the symbol code ({1})</value>
+  </data>
+  <data name="CodePhraseTerminologyWrong" xml:space="preserve">
+    <value>Expecting terminology ID '{0}' but got '{1}'.</value>
+  </data>
+  <data name="CodeStringXNotInList" xml:space="preserve">
+    <value>Unexpected code string '{0}'. Not in codes list.</value>
+  </data>
+  <data name="OntologyMissingDefinitionTerm" xml:space="preserve">
+    <value>Archetype ontology does not have term for archetype definition.</value>
+  </data>
+  <data name="ArchetypeVersionNotEqual" xml:space="preserve">
+    <value>Archetype.Version() must be equal to Archetype.ArchetypeId.VersionId</value>
+  </data>
+  <data name="ArchetypeSpecialisationInvariantFail" xml:space="preserve">
+    <value>If archetype is specialised the specialisation depth must be greater than zero.</value>
+  </data>
+  <data name="ExistenceOutOfRange" xml:space="preserve">
+    <value>Existence.Lower must be &gt;=0 and Existence.Upper must &lt;=1.</value>
+  </data>
+  <data name="MultiAttributeMembersBad" xml:space="preserve">
+    <value>CMultipleAttributes.Members() is not null so each member's Occurences.Upper must be &lt;=1.</value>
+  </data>
+  <data name="CardinalityLowerUnbounded" xml:space="preserve">
+    <value>Cardinality must be lower bounded.</value>
+  </data>
+  <data name="SingleParentOccurrencesBad" xml:space="preserve">
+    <value>CObject.Parent is not null and is CSingleAttribute so its Occurrences.Upper must be &lt;=1.</value>
+  </data>
+  <data name="AssumedValueInvalid" xml:space="preserve">
+    <value>Assumed value present but that value is not valid against the constraint.</value>
+  </data>
+  <data name="CComplexObjectAllowAnyXor" xml:space="preserve">
+    <value>Either CComplexObject.Attributes is not null and not empty or CComplexObject must allow any attribute.</value>
+  </data>
+  <data name="CPrimitiveObjectAllowAnyXor" xml:space="preserve">
+    <value>Either CPrimitiveObject.Item is not null or CPrimitiveObject must allow any item.</value>
+  </data>
+  <data name="ArchetypeInternalRefTargetPathMissing" xml:space="preserve">
+    <value>If ArchetypeInternalRef.TargetPath is not null/empty then the root object must have the target path (ultimate_root.HasPath(Targetpath) must be true).</value>
+  </data>
+</root>
